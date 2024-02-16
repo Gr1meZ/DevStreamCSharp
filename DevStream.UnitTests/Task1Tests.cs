@@ -56,6 +56,6 @@ public class Task1Tests
         boat.MaxHeight.Should().NotBe(default);
         boat.MaxSpeed.Should().NotBe(default);
         boat.Color.Should().NotBe(default);
-        boat.SeatsCount.Should().NotBe(default);
+        ((Vehicle)boat).SeatsCount.Should().NotBe(default);
     }
 }

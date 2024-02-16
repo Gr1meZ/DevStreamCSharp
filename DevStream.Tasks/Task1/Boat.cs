@@ -1,6 +1,6 @@
 namespace DevStream.Tasks.Task1;
 
-public class Boat : Vehicle
+public partial class Boat : Vehicle
 {
     public MaterialType? Material { get;  set; }
     
@@ -14,3 +14,4 @@ public enum MaterialType
 {
    Gum, Metal
 }
+

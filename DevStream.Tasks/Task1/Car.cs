@@ -1,9 +1,9 @@
 namespace DevStream.Tasks.Task1;
 
-public class Car : Vehicle
+public partial class Car : Vehicle
 {
-    public int DoorsCount { get;  set; }
-    public CarType? Type { get;  set; }
+    public int DoorsCount { get; private set; }
+    public CarType? Type { get;  private set; }
     
     public Car() : base(300, "Black", 4)
     {
@@ -19,3 +19,4 @@ public enum CarType {
     Universal,
     Hatchback
 }
+
